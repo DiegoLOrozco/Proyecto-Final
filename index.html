@@ -1,26 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Dashboard</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- Dudas: diego.lo.or@outlook.com -->
+    <title>Proyecto final de Visualización</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+
+      crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+  .bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #333333;
+      color: #ffffff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  </style>
   </head>
   <body>
-    <h1 style="text-align: center;"><span style="color: #339999;"><strong><span
-            style="font-family: Century Gothic;">Dashboard en Tableau</span></strong></span></h1>
-    <p style="text-align: left;"><strong><span style="font-family: Century Gothic;">Esto
-          es una prueba de cómo se ve un tablero incrustado:</span></strong></p>
-    <div>
-      <div class="tableauPlaceholder" id="viz1528514911870" style="position: relative"><noscript><a
-href="#"><img alt="Dashboard 1 " src="https://public.tableau.com/static/images/Pr/Prueba1_257/Dashboard1/1_rss.png"
-style="border: medium none; width: 1011px; height: 626px;"></a></noscript><object
-          class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
-          <param name="embed_code_version" value="3"> <param name="site_root" value=""><param
-            name="name" value="Prueba1_257/Dashboard1"><param name="tabs" value="no"><param
-            name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pr/Prueba1_257/Dashboard1/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1528514911870');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle"
+
+            data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="http://www.ucuauhtemoc.edu.mx/educacionadistancia/"
+
+            target="_blank">Universidad Cuauhtémoc</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Presentacion">Inicio</a></li>
+            <li><a href="#Contenido">Dashboard</a></li>
+            <li><a href="#Quienes">¿Quiénes somos?</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <a name="Presentacion"></a>
+    <div class="container-fluid bg-1 text-center">
+      <h1>PROYECTO FINAL DEL TALLER DE VISUALIZACIÓN DE DATOS</h1>
+      <br>
+      <img src="http://www.ucuauhtemoc.edu.mx/img/logo_uc.png" class="img-responsive"
+
+        style="display: inline; width: 567px; height: 147px;"><br>
+      <h3>Maestría en Big Data</h3>
     </div>
+    <a name="Contenido"></a>
+    <div class="container-fluid bg-2 text-left">
+      <h3>ACCIDENTES DE TRÁNSITO EN MÉXICO</h3>
+      <br>
+      <p>Este es un Dashboard elaborado con información del INEGI, referente a
+        los accidentes de tránsito registrados en México de 1997 a 2015. Esta
+        información está desagregada por estado. <br>
+        La información la podrás encontrar directamente en la página del <a href="http://www.beta.inegi.org.mx/app/descarga/?t=0230016000000000&amp;ag=00#denue"
+
+          target="_blank">INEGI</a>. <br>
+        El procesamiento de la información se realizó en R, obteniendo un
+        dataset que fue utilizado como insumo para crear el dashboard en Tableau
+        Public. <br>
+        Este script y el dataset lo podrás encontrar en <a href="https://github.com/DiegoLOrozco/Proyecto-Final/tree/gh-pages"
+
+          target="_blank">GitHub</a>. </p>
+      <div class="tableauPlaceholder" id="viz1528663898338" style="position: relative"><noscript><a
+
+href="#"><img alt="Tablero " src="https://public.tableau.com/static/images/Ac/AccidentesenMxico_0/Tablero/1_rss.png"
+
+style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
+
+            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
+
+            name="embed_code_version" value="3"> <param name="site_root" value=""><param
+
+            name="name" value="AccidentesenMxico_0/Tablero"><param name="tabs" value="no"><param
+
+            name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Ac/AccidentesenMxico_0/Tablero/1.png">
+          <param name="animate_transition" value="yes"><param name="display_static_image"
+
+            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
+
+            value="yes"><param name="display_count" value="yes"><param name="filter"
+
+            value="publish=yes"></object></div>
+      <script type="text/javascript">                    var divElement = document.getElementById('viz1528663898338');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    <a name="Quienes"></a>
+    <div class="container-fluid bg-3 text-center">
+      <h3>¿QUIÉNES SOMOS?</h3>
+      <i class="fab fa-linkedin-in fa-4x"> </i> <br>
+      <br>
+      <div class="row"> Somos un grupo de estudiantes de la Maestría en Big
+        Data, aficionados a los datos y la tecnología. <br>
+        Comprometidos para construir un México donde la innovación y el
+        desarrollo sean el común denominador en nuestra labor profesional. <br>
+        <br>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p> Act. Diego López, chilango dedicado a la Analítica de Negocios
+            para Banco Compartamos.</p>
+          <a href="https://www.linkedin.com/in/diego-l%C3%B3pez-orozco-0a0881ba/"
+
+            target="_blank"> <img src="https://media.licdn.com/dms/image/C5603AQErhxvM8euXBA/profile-displayphoto-shrink_200_200/0?e=1533772800&amp;v=beta&amp;t=RpfHmLFMC04GMn5k-wr4cloiBWkQ9n3doL1ztV2aDV8"
+
+              class="img-circle" height="150" width="150"></a> </div>
+        <div class="col-sm-4">
+          <p>Act. Emmanuel Espejel, chilango dedicado a la Compensación Variable
+            para las empresas de Gentera.</p>
+          <a href="https://www.linkedin.com/in/emmanuel-irving-espejel-espada-334286166/"
+
+            target="_blank"> <img src="https://media.licdn.com/dms/image/C4E03AQEFRt4-AOJxhQ/profile-displayphoto-shrink_800_800/0?e=1534377600&amp;v=beta&amp;t=z1fcCwwsWNBRTc73a8El7TtC53xxh3drKVN-CB9SSDY"
+
+              class="img-circle" height="150" width="150"></a> </div>
+        <div class="col-sm-4">
+          <p>Ing. Héctor Hernández, regiomontano dedicado a la consultoría de BI
+            para Accenture México.</p>
+          <a href="https://www.linkedin.com/in/hectorhernandezortega/" target="_blank">
+            <img src="https://media.licdn.com/dms/image/C4E03AQEhfMplNZ2owg/profile-displayphoto-shrink_800_800/0?e=1533772800&amp;v=beta&amp;t=zmV4kt5YCu2vhCk6AXPB6w9qiIzb7Xjm84PW3zP_Fhk"
+
+              class="img-circle" height="150" width="150"></a> </div>
+      </div>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+      <p> Junio 2018. Derechos Reservados <br>
+        <a href="https://diegolorozco.github.io/Elecciones2018/" target="_blank">Visita
+          nuestro proyecto sobre Elecciones 2018</a> </p>
+    </footer>
+    
   </body>
 </html>
